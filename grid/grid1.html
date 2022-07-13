@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 1</title>
+    <style>
+        #parent{
+            border: 1px solid;
+            width: 70%;
+            height: auto;
+            margin: auto;
+            margin-top: 20%;
+        }
+
+        div{
+            border-radius: 10px;
+        }
+        #AB{
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        #A{
+            padding: 10px;
+            margin: 10px;
+            background-color: grey;
+        }
+
+        #B{
+            padding: 10px;
+            margin: 10px;
+            background-color: grey;
+        }
+
+        #CD{
+            display: grid;
+            grid-template-columns: 20% 80%;
+        }
+
+        #C{
+            padding: 10px;
+            margin: 10px;
+            background-color: grey;
+        }
+
+        #D{
+            padding: 10px;
+            margin: 10px;
+            background-color: grey;
+        }
+
+        #E{
+            padding: 10px;
+            margin: 10px;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="AB">
+            <div id="A">
+                <p>A</p>
+            </div>
+            <div id="B">
+                <p>B</p>
+            </div>
+        </div>
+        <div id="CD">
+            <div id="C">
+                <p>C</p>
+            </div>
+            <div id="D">
+                <p>D</p>
+            </div>
+        </div>
+        <div id="E">
+            <P>E</P>
+        </div>
+    </div>
+</body>
+</html>

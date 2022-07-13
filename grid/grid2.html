@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID 2</title>
+
+    <style>
+        #parent{
+            border: 2px solid;
+            width: auto;
+            height: 300px;
+            padding: 20px;
+            margin-top: 30%;
+            display: grid;
+            grid-template-columns: 50% 25% 25%;
+            justify-content: space-between;
+        }
+        p{
+            font-size: 30px
+        }
+        #A{
+            background-color: grey;
+            height: 100px;
+            width:98%;
+            border: 1px solid red ;
+            margin: 5px;
+        }
+
+        .CD{
+            width: 98%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            padding: 5px;
+        }
+
+        #B{
+            background-color: grey;
+            border: 1px solid red;
+            height: 215px;
+            margin: 5px;
+        }
+
+        #C{
+            background-color: grey;
+            border: 1px solid red;
+            height: 100px;
+            margin: 0px 5px 0px 0px;
+        }
+
+        #D{
+            background-color: grey;
+            border: 1px solid red;
+            height: 100px;
+            margin: 0px 0px 0px 5px;
+        }
+
+        #E{
+            background-color: grey;
+            border: 1px solid red;
+            height: 250px;
+            margin: 5px;
+        }
+
+        div{
+            border-radius: 15px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div>
+            <div id="A">
+                <p>A</p>
+            </div>
+            <div class="CD">
+                <div id="C">
+                    <p>C</p>
+                </div>
+                <div id="D">
+                    <p>D</p>
+                </div>
+            </div>
+        </div>
+        <div id="B">
+            <p>B</p>
+        </div>
+        <div id="E">
+            <p>E</p>
+        </div>
+    </div>
+</body>
+</html>
